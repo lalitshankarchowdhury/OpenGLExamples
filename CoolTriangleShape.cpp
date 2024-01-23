@@ -31,10 +31,6 @@ void window_size_callback(GLFWwindow* window, int width, int height) {
 	spdlog::info("Window resized to dimensions: {:d}x{:d}", width, height);
 }
 
-bool is_shader_compiled(GLuint shader) {
-	return false;
-}
-
 int main() {
 	spdlog::info("Initialize GLFW");
 	if (!glfwInit()) {
